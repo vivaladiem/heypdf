@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="javascripts/externals/pdf.js"></script>
+  <script src="javascripts/externals/pdf.worker.js"></script>
+  <script src="javascripts/ez-pdf.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo-box">
+      <h3 class="logo">EASY PRINT</h3>
+    </div>
+    
+  </div>
+  <section class="section">
+    <div class="file-selector">
+      <div class="file-selector__dropzone"></div>
+      <div class="file-selector__box">
+        <input type="file" id="input-file" class="file-selector__file-input u-hidden" accept="application/pdf" multiple></input>
+        <label for="input-file" class="btn btn-redish file-selector__btn--select">버튼을 누르시거나</label>
+      <p class="file-selector__dropzone--text">끌어다 놓으세요.</p>
+      </div>
+    </div>
+    <div class="files-info">
+      
+    </div>
+    
+  </section>
+  <footer class="footer"></footer>
+</body>
+</html>

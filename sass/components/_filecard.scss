@@ -1,0 +1,71 @@
+.pdfcard {
+    width: 16rem;
+    // height: 28rem;
+    display: inline-block;
+    margin: 2rem;
+    vertical-align: top;
+
+    // transition: all .2s;
+
+    &:hover {
+        background-color: rgba($color-white, .5);
+        outline: 2px solid #ddd;
+        // transform: scale(1.4);
+        cursor: move;
+    }
+    
+    &__canvasbox {
+        width: 14rem;
+        height: 21rem;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &__canvas {
+        background-color: $color-grey-light; //temp placeholder
+        max-width: 14rem;
+        max-height: 21rem;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 2px 8px 1.5px rgba($color-black, .4);
+    }
+
+    &__meta {
+        text-align: center; 
+        display: block;
+        bottom: 0;
+
+        &--file-name {
+            font-size: 1.4rem;
+            font-weight: 600;
+            // white-space: nowrap;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+        }
+
+        &--page-count {
+            font-size: 1.4rem;
+
+            &::after {
+                content: $text-page; // [TODO] 동적인 셈이라 여기가 아니라 js에서 하는게 좋을지도..
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 560px) {
+    // 스마트폰 용 레이아웃.
+    // 스마트폰에선 1열만 놔둘 수밖에 없다.
+    // 세로로 스크롤 해야 하고, 설명은 옆으로 길게 놔야 한다.
+    // 그래서 서로 분리할 책의 경우 탭으로 구분해야 한다.
+    // 드래그가 아니라 버튼 눌러 순서 변경하게 하고.
+    // 그러면 드래그도 스마트폰 이상에서만 작동하게 해야겠네..
+    // 코드를 화면크기 따라 다르게 적용하는 것은 또 어떻게..?
+    // 기본적으로 pc웹용이니까 당장은 급한게 아니므로 나중에 구현하자.
+
+}

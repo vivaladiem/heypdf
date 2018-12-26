@@ -1,0 +1,103 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #333; }
+
+.upload__dropzone--text {
+  margin: 1rem 0; }
+
+.u-hidden {
+  display: none; }
+
+.btn {
+  padding: 1.2rem 8rem;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  transition: all .2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); }
+
+@media (max-width: 767px) {
+  .btn {
+    padding: 1rem 1.5rem; } }
+
+.btn-redish {
+  background-color: #ed553b;
+  color: white; }
+
+.pdfcard {
+  width: 16rem;
+  display: inline-block;
+  margin: 2rem;
+  vertical-align: top; }
+  .pdfcard:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: 2px solid #ddd;
+    cursor: move; }
+  .pdfcard__canvasbox {
+    width: 14rem;
+    height: 21rem;
+    position: relative;
+    margin: 0 auto; }
+  .pdfcard__canvas {
+    background-color: #eee;
+    max-width: 14rem;
+    max-height: 21rem;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 8px 1.5px rgba(0, 0, 0, 0.4); }
+  .pdfcard__meta {
+    text-align: center;
+    display: block;
+    bottom: 0; }
+    .pdfcard__meta--file-name {
+      font-size: 1.4rem;
+      font-weight: 600; }
+    .pdfcard__meta--page-count {
+      font-size: 1.4rem; }
+      .pdfcard__meta--page-count::after {
+        content: "페이지"; }
+
+.logo-box {
+  margin: 2rem;
+  text-align: center;
+  position: absolute; }
+
+.file-selector {
+  padding: 3rem; }
+  .file-selector__box {
+    text-align: center; }
+
+.files-info {
+  padding: 2rem 4rem; }
+
+.header {
+  height: 12rem;
+  background-color: #eee;
+  box-shadow: 0 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+  position: relative; }
